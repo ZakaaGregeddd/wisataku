@@ -2,7 +2,6 @@ import { useColorScheme } from '@/hooks/use-color-scheme';
 import { AntDesign } from '@expo/vector-icons';
 import FontAwesome from '@expo/vector-icons/FontAwesome';
 import { StatusBar } from 'expo-status-bar';
-import React from 'react';
 import { ImageBackground, Text, TouchableOpacity, View } from 'react-native';
 import 'react-native-reanimated';
 import { styles } from './styles/layout-styles';
@@ -24,7 +23,7 @@ export default function RootLayout() {
         </View>
 
         <View style={styles.lokasi}>
-          <Text style={styles.lokasiTeks}> Ciroyom, Bandung</Text>
+          <Text style={styles.lokasiTeks}> Ciroyom, adfafawf</Text>
           <View style={styles.rating}>
             <AntDesign name="heart" color="white" />
             <AntDesign name="heart" color="white" />
