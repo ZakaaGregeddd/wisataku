@@ -1,23 +1,19 @@
-import { StatusBar } from 'expo-status-bar';
-import { ImageBackground, Text, TouchableOpacity, View } from 'react-native';
-import { styles } from './styles/layout-styles';
-
+// app/_layout.tsx (INI FILE BARU)
+import { Stack } from 'expo-router';
 
 export default function RootLayout() {
   return (
-    <View style={styles.container}>
-
-      <ImageBackground style={styles.gambarBG} source={require('../assets/images/Delta-bg01.jpg')}>
-        <View style={styles.centerContent}>
-          {/* Logo dihapus, hanya tombol */}
-          <TouchableOpacity style={styles.startButton}>
-            <Text style={styles.startButtonText}>-start-</Text>
-          </TouchableOpacity>
-        </View>
-      </ImageBackground>
-
-      <StatusBar style="auto" />
-
-    </View>
+    <Stack>
+      <Stack.Screen name="index" options={{ headerShown: false }} />
+      <Stack.Screen 
+        name="home" 
+        options={{ 
+          title: 'Home', 
+          headerShown: true,
+          headerStyle: { backgroundColor: '#1a1a1a' },
+          headerTintColor: '#fff'
+        }} 
+      />
+    </Stack>
   );
 }

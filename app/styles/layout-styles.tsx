@@ -89,8 +89,13 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 40,
     paddingVertical: 10,
     borderRadius: 20,
-    elevation: 2,
+    elevation: 15, // Android shadow
     marginBottom: 200, // jarak dari bawah layar
+   
+    shadowColor: '#00FF99',
+    shadowOffset: { width: 1, height: 1 },
+    shadowOpacity: 0.9,
+    shadowRadius: 25,
   },
   startButtonText: {
     color: '#fff',
