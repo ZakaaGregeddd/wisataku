@@ -54,11 +54,10 @@ export const styles = StyleSheet.create({
     marginLeft: 30,
   },
   gambarBG: {
-    width: '100%',
-    paddingBottom: 10,
+    flex: 1,
+    resizeMode: 'cover', // atau 'stretch' jika ingin dipaksa penuh
+    justifyContent: 'center',
   },
-
-
   tombol: {
     marginBottom: 10,
     marginLeft: 200,
@@ -75,7 +74,28 @@ export const styles = StyleSheet.create({
     fontSize: 12,
     fontWeight: 'bold',
   },
-  
-
-
+  centerContent: {
+    flex: 1,
+    justifyContent: 'flex-end', // tombol di bawah
+    alignItems: 'center',
+  },
+  logo: {
+    width: 220,
+    height: 120,
+    marginBottom: 40,
+  },
+  startButton: {
+    backgroundColor: '#00FF99',
+    paddingHorizontal: 40,
+    paddingVertical: 10,
+    borderRadius: 20,
+    elevation: 2,
+    marginBottom: 200, // jarak dari bawah layar
+  },
+  startButtonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 18,
+    letterSpacing: 2,
+  },
 });
