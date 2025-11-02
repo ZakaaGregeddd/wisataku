@@ -17,9 +17,9 @@ export default function RootLayout() {
   return (
     <View style={styles.container}>
 
-      <ImageBackground style={styles.gambarBG} source={require('../assets/images/wisata-01.jpg')}>
+      <ImageBackground style={styles.gambarBG} source={require('../assets/images/Delta-bg01.jpg')}>
         <View style={styles.header}>
-          <Text style={styles.headerTeks}>W I S A T A K U</Text>
+          <Text style={styles.headerTeks}>D E L T A F O R C E</Text>
         </View>
 
         <View style={styles.lokasi}>
